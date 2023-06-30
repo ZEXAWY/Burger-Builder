@@ -5,6 +5,7 @@ import classes from "./BuildControl.module.css";
 const buildControl = (props) => (
   <div className={classes.BuildControl}>
     <div className={classes.Label}>{props.label}</div>
+    <p>{`Price is: ${props.pricePerIngredient} for Piece`}    </p>
     <button
       className={classes.Less}
       onClick={props.removed}
